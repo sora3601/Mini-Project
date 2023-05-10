@@ -1155,7 +1155,7 @@ public class View {
 
 										if (dao.selectNick(Nick) == 1) {
 											System.out.println("이미 사용 중인 닉네임 입니다");
-										} else if (dao.selectNick(Nick) == 0) {
+										} else if (dao.selectNick(Nick) == -1) {
 											dao.change_Nick_Name(logID, Nick);
 											System.out.print("닉네임 변경 중");
 											dao.delayhhsc();
@@ -1169,9 +1169,8 @@ public class View {
 											System.out.println("변경이 완료되었습니다.");
 											dao.delayhalfsc();
 											break;
-										} else {
-											System.out.println("시스템 오류입니다. 죄송합니다.");
-										}
+										} 
+										
 
 									} // while
 
