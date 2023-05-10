@@ -603,7 +603,7 @@ public class DAO {
 	public int change_Nick_Name(String id, String ch_Nick_Name) {
 		connect();
 
-		String sql = "update user_info set nickname='" + ch_Nick_Name + "' where id = ?";
+		String sql = "update user_info set Nickname='" + ch_Nick_Name + "' where userid = ?";
 
 		pst = null;
 
@@ -633,7 +633,7 @@ public class DAO {
 	public int change_PASSWORD(String logID, String pASSWORD) {
 		connect();
 
-		String sql = "update user_info set pw'" + pASSWORD + "' where id = ?";
+		String sql = "update user_info set pw'" + pASSWORD + "' where userid = ?";
 
 		pst = null;
 

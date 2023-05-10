@@ -1167,6 +1167,7 @@ public class View {
 											dao.delayhalfsc();
 
 											System.out.println("변경이 완료되었습니다.");
+											logNic = Nick;
 											dao.delayhalfsc();
 											break;
 										} 
